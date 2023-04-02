@@ -4,6 +4,10 @@ import telegram
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler
 
+if __name__ == '__main__':
+    updater.start_polling()
+
+
 # Configuració de la base de dades Postgres
 DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
