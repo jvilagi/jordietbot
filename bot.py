@@ -5,7 +5,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler
 
 if __name__ == '__main__':
-    updater.start_polling()
+    Updater.start_polling()
 
 
 # Configuració de la base de dades Postgres
