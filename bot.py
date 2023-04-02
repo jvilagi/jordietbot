@@ -1,19 +1,14 @@
 import os
-import psycopg2
 import telegram
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler
 
-updater = Updater("6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM", use_context=telegram.ext.CallbackContext())
-#versió nova del paquet python-telegram-bot (13.0)
-#updater = Updater("6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM")
-
+updater = Updater("TOKEN", use_context=True)
 
 # A partir d'aquí pots afegir el codi per a mostrar els botons i la informació associada a cada alumne
 
 if __name__ == '__main__':
     updater.start_polling()
-
 
 # Configuració de la base de dades Postgres
 DATABASE_URL = os.environ['DATABASE_URL']
