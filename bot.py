@@ -33,7 +33,7 @@ def main():
     # Set up the logging
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-    # Set up the updater and dispatcher
+    # SAquí hi poso el TOKEN
     updater = Updater('6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM', use_context=True)
     dispatcher = updater.dispatcher
 
