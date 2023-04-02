@@ -1,55 +1,31 @@
-import os
 import logging
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import CallbackQueryHandler, CommandHandler, Updater
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, CallbackContext
 
-def start(update, context):
-    button1 = InlineKeyboardButton(text='Botó 1', callback_data='button1')
-    button2 = InlineKeyboardButton(text='Botó 2', callback_data='button2')
-    button3 = InlineKeyboardButton(text='Botó 3', callback_data='button3')
+# Define a function that handles the /ababol command
+def ababol_handler(update: Update, context: CallbackContext):
+    # Define the buttons
+    buttons = [
+        ['Button 1', 'Button 2'],
+        ['Button 3']
+    ]
 
-    keyboard = [[button1], [button2], [button3]]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-
-    update.message.reply_text(
-        'Hola! Aquí tens els botons:',
-        reply_markup=reply_markup
-    )
-
-
-def button_callback(update, context):
-    query = update.callback_query
-    query.answer()
-
-    button = query.data
-    if button == 'button1':
-        query.edit_message_text('Has clicat el Botó 1')
-    elif button == 'button2':
-        query.edit_message_text('Has clicat el Botó 2')
-    elif button == 'button3':
-        query.edit_message_text('Has clicat el Botó 3')
-
+    # Send the message with the buttons
+    context.bot.send_message(chat_id=update.effective_chat.id, text='Choose an option:', reply_markup={'keyboard': buttons, 'resize_keyboard': True})
 
 def main():
-    # Configuració del logging
+    # Set up the logging
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-    # Inicialització del bot
-    token = os.environ.get('6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM')
-    updater = Updater('6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM')
-
-    # Assignació dels handlers
+    # Set up the updater and dispatcher
+    updater = Updater('6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM', use_context=True)
     dispatcher = updater.dispatcher
-    dispatcher.add_handler(CommandHandler('ababol', start))
-    dispatcher.add_handler(CallbackQueryHandler(button_callback))
 
-    # Inici del bot
-    port = int(os.environ.get('PORT', '80'))
-    updater.start_webhook(listen='0.0.0.0', port=int(os.environ.get('PORT', '80')), url_path='6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM')
-    updater.bot.setWebhook(url='https://jordietbot.herokuapp.com/' + '6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM')
+    # Add the command handler
+    dispatcher.add_handler(CommandHandler('ababol', ababol_handler))
 
-
-    # Bucle principal del bot
+    # Start the bot
+    updater.start_polling()
     updater.idle()
 
 if __name__ == '__main__':
