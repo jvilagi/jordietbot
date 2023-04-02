@@ -5,15 +5,15 @@ from telegram.ext import CommandHandler, CallbackQueryHandler, Filters, MessageH
 # Definim la funció per a la comanda /ababol
 def ababol(update, context):
     # Creem els botons
-    buttons = [[InlineKeyboardButton("Botó 1", callback_data='button1'),
-                InlineKeyboardButton("Botó 2", callback_data='button2'),
-                InlineKeyboardButton("Botó 3", callback_data='button3')],
-               [InlineKeyboardButton("Botó 4", callback_data='button4'),
-                InlineKeyboardButton("Botó 5", callback_data='button5'),
-                InlineKeyboardButton("Botó 6", callback_data='button6')],
-               [InlineKeyboardButton("Botó 7", callback_data='button7'),
-                InlineKeyboardButton("Botó 8", callback_data='button8'),
-                InlineKeyboardButton("Botó 9", callback_data='button9')],
+    buttons = [[InlineKeyboardButton("Pau", callback_data='Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel:01-8462622)'),
+                InlineKeyboardButton("Luyi", callback_data='Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel:01-8462622)'),
+                InlineKeyboardButton("José A.", callback_data='Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel:01-8462622)')],
+               [InlineKeyboardButton("Jordi", callback_data='Chalkley John, Fiona: 24 Beechpark, Portmarnock (tel:01-8463522)'),
+                InlineKeyboardButton("Víctor", callback_data='Chalkley John, Fiona: 24 Beechpark, Portmarnock (tel:01-8463522)'),
+                InlineKeyboardButton("Martí", callback_data='Chalkley John, Fiona: 24 Beechpark, Portmarnock (tel:01-8463522)')],
+               [InlineKeyboardButton("Marina", callback_data='Doyle(Cronin) Dermot, Bernadette: 165 Briar Walk, Portmarnock (tel:18284787)'),
+                InlineKeyboardButton("Ana", callback_data='Doyle(Cronin) Dermot, Bernadette: 165 Briar Walk, Portmarnock (tel:18284787)'),
+                InlineKeyboardButton("Beatriz", callback_data='Doyle(Cronin) Dermot, Bernadette: 165 Briar Walk, Portmarnock (tel:18284787)')],
                [InlineKeyboardButton("Botó 10", callback_data='button10')]]
 
     # Creem el markup amb els botons
