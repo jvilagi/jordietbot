@@ -1,17 +1,30 @@
 import logging
-from telegram import Update
-from telegram.ext import Updater, CommandHandler, CallbackContext
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext
 
 # Define a function that handles the /ababol command
 def ababol_handler(update: Update, context: CallbackContext):
     # Define the buttons
-    buttons = [
-        ['Button 1', 'Button 2'],
-        ['Button 3']
-    ]
+    button1 = InlineKeyboardButton('Button 1', callback_data='1')
+    button2 = InlineKeyboardButton('Button 2', callback_data='2')
+    button3 = InlineKeyboardButton('Button 3', callback_data='3')
+    buttons = [[button1, button2], [button3]]
 
     # Send the message with the buttons
-    context.bot.send_message(chat_id=update.effective_chat.id, text='Choose an option:', reply_markup={'keyboard': buttons, 'resize_keyboard': True})
+    reply_markup = InlineKeyboardMarkup(buttons)
+    update.message.reply_text('Choose an option:', reply_markup=reply_markup)
+
+# Define a function that handles the button callbacks
+def button_callback(update: Update, context: CallbackContext):
+    query = update.callback_query
+    query.answer()
+
+    # Get the button data
+    button_data = query.data
+
+    # Send a message with the button data
+    message = f'The button pressed was {button_data}.'
+    query.edit_message_text(text=message)
 
 def main():
     # Set up the logging
@@ -23,6 +36,9 @@ def main():
 
     # Add the command handler
     dispatcher.add_handler(CommandHandler('ababol', ababol_handler))
+
+    # Add the callback query handler
+    dispatcher.add_handler(CallbackQueryHandler(button_callback))
 
     # Start the bot
     updater.start_polling()
