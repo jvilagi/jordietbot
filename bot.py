@@ -27,7 +27,7 @@ def button(update, context):
     query = update.callback_query
     query.answer()
     query.edit_message_text(text=f"{query.data}")
-    updater.stop()
+    context.bot.send_message(chat_id=query.message.chat_id, text="Gràcies per utilitzar-me! Estic a l'espera de noves consultes.")
 
 # Configuració del bot i dels handlers
 TOKEN = "6011630982:AAHJ4zGuqiMD93kNdcjYPzHAnR6bxqNUaUE"
