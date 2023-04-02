@@ -36,7 +36,7 @@ def main():
 
     # Inicialització del bot
     token = os.environ.get('6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM')
-    updater = Updater(token)
+    updater = Updater('6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM')
 
     # Assignació dels handlers
     dispatcher = updater.dispatcher
