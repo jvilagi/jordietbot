@@ -3,7 +3,8 @@ import telegram
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler
 
-updater = Updater("6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM", use_context=False)
+#updater = Updater("6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM", use_context=False)
+updater = Updater("6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM")
 
 # A partir d'aquí pots afegir el codi per a mostrar els botons i la informació associada a cada alumne
 
