@@ -44,8 +44,8 @@ def main():
     dispatcher.add_handler(CallbackQueryHandler(button_callback))
 
     # Inici del bot
-    port = int(os.environ.get('PORT', '8443'))
-    updater.start_webhook(listen='0.0.0.0', port=int(os.environ.get('PORT', '8443')), url_path='6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM')
+    port = int(os.environ.get('PORT', '80'))
+    updater.start_webhook(listen='0.0.0.0', port=int(os.environ.get('PORT', '80')), url_path='6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM')
     updater.bot.setWebhook(url='https://jordietbot.herokuapp.com/' + '6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM')
 
 
