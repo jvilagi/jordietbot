@@ -36,7 +36,7 @@ def main():
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
     # Inicialització del bot
-    token = os.environ.get('6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM')
+    token = '6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM'
     updater = Updater(token)
 
     # Assignació dels handlers
