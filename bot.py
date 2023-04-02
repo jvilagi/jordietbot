@@ -40,7 +40,7 @@ def main():
 
     # Assignació dels handlers
     dispatcher = updater.dispatcher
-    dispatcher.add_handler(CommandHandler('start', start))
+    dispatcher.add_handler(CommandHandler('ababol', start))
     dispatcher.add_handler(CallbackQueryHandler(button_callback))
 
     # Inici del bot
