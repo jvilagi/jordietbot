@@ -45,8 +45,9 @@ def main():
 
     # Inici del bot
     port = int(os.environ.get('PORT', '8443'))
-    updater.start_webhook(listen='0.0.0.0', port=port, url_path=token)
-    updater.bot.setWebhook('https://{}.herokuapp.com/{}'.format(os.environ.get('jordietbot'), token))
+    updater.start_webhook(listen='0.0.0.0', port=int(os.environ.get('PORT', '8443')), url_path=TOKEN)
+    updater.bot.setWebhook(url='https://jordietbot.herokuapp.com/' + TOKEN)
+
 
     # Bucle principal del bot
     updater.idle()
