@@ -4,8 +4,12 @@ import telegram
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler
 
+updater = Updater(TOKEN, use_context=True)
+
+# A partir d'aquí pots afegir el codi per a mostrar els botons i la informació associada a cada alumne
+
 if __name__ == '__main__':
-    Updater.start_polling()
+    updater.start_polling()
 
 
 # Configuració de la base de dades Postgres
