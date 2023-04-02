@@ -27,6 +27,7 @@ def button(update, context):
     query = update.callback_query
     query.answer()
     query.edit_message_text(text=f"{query.data}")
+    updater.stop()
 
 # Configuració del bot i dels handlers
 TOKEN = "6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM"
@@ -39,3 +40,4 @@ dispatcher.add_handler(CallbackQueryHandler(button))
 
 # Iniciem el bot
 updater.start_polling()
+updater.idle()
