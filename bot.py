@@ -40,4 +40,4 @@ dispatcher.add_handler(CallbackQueryHandler(button))
 
 # Iniciem el bot
 updater.start_polling()
-#updater.idle()
+updater.idle()
