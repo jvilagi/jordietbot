@@ -4,7 +4,7 @@ import telegram
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler
 
-updater = Updater("6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM", use_context=True)
+updater = Updater("6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM", use_context=telegram.ext.CallbackContext())
 #versió nova del paquet python-telegram-bot (13.0)
 #updater = Updater("6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM")
 
