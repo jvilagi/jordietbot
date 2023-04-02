@@ -26,7 +26,7 @@ def ababol(update, context):
 def button(update, context):
     query = update.callback_query
     query.answer()
-    query.edit_message_text(text=f"Has premut el botó {query.data}")
+    query.edit_message_text(text=f"{query.data}")
 
 # Configuració del bot i dels handlers
 TOKEN = "6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM"
