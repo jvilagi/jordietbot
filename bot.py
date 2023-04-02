@@ -30,7 +30,7 @@ def button(update, context):
     updater.stop()
 
 # Configuració del bot i dels handlers
-TOKEN = "6011630982:AAF8viJgzYgtBaVTz-ETPPMrGMOnQTNu1eM"
+TOKEN = "6011630982:AAHJ4zGuqiMD93kNdcjYPzHAnR6bxqNUaUE"
 updater = Updater(token=TOKEN, use_context=True)
 dispatcher = updater.dispatcher
 
