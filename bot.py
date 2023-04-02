@@ -30,7 +30,7 @@ def button(update, context):
     context.bot.send_message(chat_id=query.message.chat_id, text="Gràcies per utilitzar-me! Estic a l'espera de noves consultes.")
 
 # Configuració del bot i dels handlers
-TOKEN = "6011630982:AAHJ4zGuqiMD93kNdcjYPzHAnR6bxqNUaUE"
+TOKEN = "6011630982:AAErHCSEabMjLEOLzQYZcIrUnz6IUyF-KFE"
 updater = Updater(token=TOKEN, use_context=True)
 dispatcher = updater.dispatcher
 
