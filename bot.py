@@ -55,3 +55,5 @@ def create_alumnes_buttons():
 #
 updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=TOKEN)
 updater.bot.setWebhook(APP_URL + TOKEN)
+
+app.run(debug=True, port=int(PORT), host='0.0.0.0')
