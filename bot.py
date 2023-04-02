@@ -26,6 +26,9 @@ def button_callback(update: Update, context: CallbackContext):
     message = f'The button pressed was {button_data}.'
     query.edit_message_text(text=message)
 
+    # Remove the buttons
+    query.message.reply_text('Buttons have been removed.', reply_markup=InlineKeyboardMarkup([[]]))
+
 def main():
     # Set up the logging
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
