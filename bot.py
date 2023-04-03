@@ -6,15 +6,21 @@ TOKEN = "6011630982:AAFhEP6GSgdK8sLHQbo7LIZ7HW2nBwPYURw"
 
 def start(update: Update, context: CallbackContext) -> None:
     keyboard = [
-        [InlineKeyboardButton("Pau", callback_data="info_1")],
-        [InlineKeyboardButton("Luyi", callback_data="info_2")],
-        [InlineKeyboardButton("José A.", callback_data="info_3")],
-        [InlineKeyboardButton("Jordi", callback_data="info_4")],
-        [InlineKeyboardButton("Víctor", callback_data="info_5")],
-        [InlineKeyboardButton("Martí", callback_data="info_6")],
-        [InlineKeyboardButton("Marina", callback_data="info_7")],
-        [InlineKeyboardButton("Ana", callback_data="info_8")],
-        [InlineKeyboardButton("Beatriz", callback_data="info_9")],
+        [
+            InlineKeyboardButton("Pau", callback_data="info_1"),
+            InlineKeyboardButton("Luyi", callback_data="info_2"),
+            InlineKeyboardButton("José A.", callback_data="info_3")
+        ],
+        [
+            InlineKeyboardButton("Jordi", callback_data="info_4"),
+            InlineKeyboardButton("Víctor", callback_data="info_5"),
+            InlineKeyboardButton("Martí", callback_data="info_6")
+        ],
+        [
+            InlineKeyboardButton("Marina", callback_data="info_7"),
+            InlineKeyboardButton("Ana", callback_data="info_8"),
+            InlineKeyboardButton("Beatriz", callback_data="info_9")
+        ],
         [InlineKeyboardButton("Luyi", callback_data="info_10")],
         [InlineKeyboardButton("Luyi", callback_data="info_11")],
         [InlineKeyboardButton("Luyi", callback_data="info_12")],
