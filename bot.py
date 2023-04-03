@@ -108,7 +108,7 @@ def button(update: Update, context: CallbackContext) -> None:
         "info_30": "Lloyd B Eddie, Bridie: 69 Carrick Court, Portmarnock (tel: 086 1302292)",
         "info_31": "Lloyd Joe, Elaine: 74 Portmarnock Drive, Portmarnock (tel: 087 6868776)",
         "info_32": "Lloyd Joe, Elaine: 74 Portmarnock Drive, Portmarnock (tel: 087 6868776)",
-        "info_33": "Williams Peter, Norma: 8 Waterside Crescent, Portmarnock (tel: 01 8461063)",
+        "info_33": "*SERGI & JORDI* \nWilliams Peter, Norma: 8 Waterside Crescent, Portmarnock (tel: 01 8461063)",
         # Afegir aquí la resta d'informacions
     }
 
