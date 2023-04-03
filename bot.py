@@ -7,19 +7,19 @@ TOKEN = "6011630982:AAFhEP6GSgdK8sLHQbo7LIZ7HW2nBwPYURw"
 def start(update: Update, context: CallbackContext) -> None:
     keyboard = [
         [
-            InlineKeyboardButton("Pau", callback_data="info_1"),
-            InlineKeyboardButton("Luyi", callback_data="info_2"),
-            InlineKeyboardButton("José A.", callback_data="info_3")
+            InlineKeyboardButton("Pau", callback_data="Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel:01-8462622)"),
+            InlineKeyboardButton("Luyi", callback_data="Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel:01-8462622)"),
+            InlineKeyboardButton("José A.", callback_data="Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel:01-8462622)")
         ],
         [
-            InlineKeyboardButton("Jordi", callback_data="info_4"),
-            InlineKeyboardButton("Víctor", callback_data="info_5"),
-            InlineKeyboardButton("Martí", callback_data="info_6")
+            InlineKeyboardButton("Jordi", callback_data="Chalkley John, Fiona: 24 Beechpark, Portmarnock (tel:01-8463522)"),
+            InlineKeyboardButton("Víctor", callback_data="Chalkley John, Fiona: 24 Beechpark, Portmarnock (tel:01-8463522)"),
+            InlineKeyboardButton("Martí", callback_data="Chalkley John, Fiona: 24 Beechpark, Portmarnock (tel:01-8463522)")
         ],
         [
-            InlineKeyboardButton("Marina", callback_data="info_7"),
-            InlineKeyboardButton("Ana", callback_data="info_8"),
-            InlineKeyboardButton("Beatriz", callback_data="info_9")
+            InlineKeyboardButton("Marina", callback_data="Doyle(Cronin) Dermot, Bernadette: 165 Briar Walk, Portmarnock (tel:18284787)"),
+            InlineKeyboardButton("Ana", callback_data="Doyle(Cronin) Dermot, Bernadette: 165 Briar Walk, Portmarnock (tel:18284787)"),
+            InlineKeyboardButton("Beatriz", callback_data="Doyle(Cronin) Dermot, Bernadette: 165 Briar Walk, Portmarnock (tel:18284787)")
         ],
         [InlineKeyboardButton("Luyi", callback_data="info_10")],
         [InlineKeyboardButton("Luyi", callback_data="info_11")],
