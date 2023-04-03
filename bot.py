@@ -21,26 +21,48 @@ def start(update: Update, context: CallbackContext) -> None:
             InlineKeyboardButton("Ana", callback_data="info_8"),
             InlineKeyboardButton("Beatriz", callback_data="info_9")
         ],
-        [InlineKeyboardButton("Luyi", callback_data="info_10")],
-        [InlineKeyboardButton("Luyi", callback_data="info_11")],
-        [InlineKeyboardButton("Luyi", callback_data="info_12")],
-        [InlineKeyboardButton("Luyi", callback_data="info_13")],
-        [InlineKeyboardButton("Luyi", callback_data="info_14")],
-        [InlineKeyboardButton("Luyi", callback_data="info_15")],
-        [InlineKeyboardButton("Luyi", callback_data="info_16")],
-        [InlineKeyboardButton("Luyi", callback_data="info_17")],
-        [InlineKeyboardButton("Luyi", callback_data="info_18")],
-        [InlineKeyboardButton("Luyi", callback_data="info_19")],
-        [InlineKeyboardButton("Luyi", callback_data="info_20")],
-        [InlineKeyboardButton("Luyi", callback_data="info_21")],
-        [InlineKeyboardButton("Luyi", callback_data="info_22")],
-        [InlineKeyboardButton("Luyi", callback_data="info_23")],
-        [InlineKeyboardButton("Luyi", callback_data="info_24")],
-        [InlineKeyboardButton("Luyi", callback_data="info_25")],
-        [InlineKeyboardButton("Luyi", callback_data="info_26")],
-        [InlineKeyboardButton("Luyi", callback_data="info_27")],
-        [InlineKeyboardButton("Luyi", callback_data="info_28")],
-        [InlineKeyboardButton("Luyi", callback_data="info_29")],
+        [
+            InlineKeyboardButton("Yao Yao", callback_data="info_10"),
+            InlineKeyboardButton("Alexandra", callback_data="info_11")
+        ],
+        [
+            InlineKeyboardButton("Mar", callback_data="info_12"),
+            InlineKeyboardButton("Coral", callback_data="info_13")
+        ],
+        [
+            InlineKeyboardButton("Aina", callback_data="info_14"),
+            InlineKeyboardButton("Imma", callback_data="info_15"),
+            InlineKeyboardButton("Olga", callback_data="info_16"),
+            InlineKeyboardButton("Rita", callback_data="info_17")
+        ],
+        [
+            InlineKeyboardButton("Alexia", callback_data="info_18"),
+            InlineKeyboardButton("Martina", callback_data="info_19"),
+            InlineKeyboardButton("Paula", callback_data="info_20")
+        ],
+        [
+            InlineKeyboardButton("Íria", callback_data="info_21"),
+            InlineKeyboardButton("Mònica", callback_data="info_22"),
+            InlineKeyboardButton("Berta", callback_data="info_23")
+        ],
+        [
+            InlineKeyboardButton("Jana", callback_data="info_24"),
+            InlineKeyboardButton("Mireia", callback_data="info_25"),
+            InlineKeyboardButton("Clàudia", callback_data="info_26")
+        ],
+        [
+            InlineKeyboardButton("Laura", callback_data="info_27"),
+            InlineKeyboardButton("Carla", callback_data="info_28")
+        ],
+        [
+            InlineKeyboardButton("F.Xavier", callback_data="info_29"),
+            InlineKeyboardButton("Gabriel", callback_data="info_30")
+        ],
+        [
+            InlineKeyboardButton("Zihao", callback_data="info_31"),
+            InlineKeyboardButton("Gerardo A.", callback_data="info_32")
+        ],
+        [InlineKeyboardButton("Sergi & Jordi", callback_data="info_33")],
         # Afegir aquí la resta de botons
     ]
 
@@ -54,35 +76,39 @@ def button(update: Update, context: CallbackContext) -> None:
     query.answer()
 
     info = {
-        "info_1": "Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel:01-8462622)",
-        "info_2": "Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel:01-8462622)",
-        "info_3": "Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel:01-8462622)",
-        "info_4": "Chalkley John, Fiona: 24 Beechpark, Portmarnock (tel:018463522)",
-        "info_5": "Aquesta és la informació del botó 2.",
-        "info_6": "Aquesta és la informació del botó 2.",
-        "info_7": "Aquesta és la informació del botó 2.",
-        "info_8": "Aquesta és la informació del botó 2.",
-        "info_9": "Aquesta és la informació del botó 2.",
-        "info_10": "Aquesta és la informació del botó 2.",
-        "info_11": "Aquesta és la informació del botó 2.",
-        "info_12": "Aquesta és la informació del botó 2.",
-        "info_13": "Aquesta és la informació del botó 2.",
-        "info_14": "Aquesta és la informació del botó 2.",
-        "info_15": "Aquesta és la informació del botó 2.",
-        "info_16": "Aquesta és la informació del botó 2.",
-        "info_17": "Aquesta és la informació del botó 2.",
-        "info_18": "Aquesta és la informació del botó 2.",
-        "info_19": "Aquesta és la informació del botó 2.",
-        "info_20": "Aquesta és la informació del botó 2.",
-        "info_21": "Aquesta és la informació del botó 2.",
-        "info_22": "Aquesta és la informació del botó 2.",
-        "info_23": "Aquesta és la informació del botó 2.",
-        "info_24": "Aquesta és la informació del botó 2.",
-        "info_25": "Aquesta és la informació del botó 2.",
-        "info_26": "Aquesta és la informació del botó 2.",
-        "info_27": "Aquesta és la informació del botó 2.",
-        "info_28": "Aquesta és la informació del botó 2.",
-        "info_29": "Aquesta és la informació del botó 2.",
+        "info_1": "Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel: 01 8462622)",
+        "info_2": "Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel: 01 8462622)",
+        "info_3": "Brady Stuart, Lorraine: 24 The Dunes, Portmarnock (tel: 01 8462622)",
+        "info_4": "Chalkley John, Fiona: 24 Beechpark, Portmarnock (tel: 01 8463522)",
+        "info_5": "Chalkley John, Fiona: 24 Beechpark, Portmarnock (tel: 01 8463522",
+        "info_6": "Chalkley John, Fiona: 24 Beechpark, Portmarnock (tel: 01 8463522",
+        "info_7": "Doyle(Cronin) Dermot, Bernadette: 165 Briar Walk, Portmarnock (tel:01 8284787)",
+        "info_8": "Doyle(Cronin) Dermot, Bernadette: 165 Briar Walk, Portmarnock (tel:01 18284787)",
+        "info_9": "Doyle(Cronin) Dermot, Bernadette: 165 Briar Walk, Portmarnock (tel:01 8284787)",
+        "info_10": "Gleeson Eoghan, Maureen: 32 Portmarnock Drive, Portmarnock (tel: 01 4432458)",
+        "info_11": "Gleeson Eoghan, Maureen: 32 Portmarnock Drive, Portmarnock (tel: 01 4432458)",
+        "info_12": "Mc Dermott John, Sarah: 13 Limetree Ave., Portmarnock (tel: 086 8643956)"
+        "info_13": "Mc Dermott John, Sarah: 13 Limetree Ave., Portmarnock (tel: 086 8643956)",
+        "info_14": "Mooney, Linda: 70 The Dunes, Portmarnock (tel: 086 3868543)",
+        "info_15": "Mooney, Linda: 70 The Dunes, Portmarnock (tel: 086 3868543)",
+        "info_16": "Mooney, Linda: 70 The Dunes, Portmarnock (tel: 086 3868543)",
+        "info_17": "Mooney, Linda: 70 The Dunes, Portmarnock (tel: 086 3868543)",
+        "info_18": "Moore A Edward, Ann: 14 Limetree Avenue, Portmarnock (tel: 087 2408323)",
+        "info_19": "Moore A Edward, Ann: 14 Limetree Avenue, Portmarnock (tel: 087 2408323)",
+        "info_20": "Moore A Edward, Ann: 14 Limetree Avenue, Portmarnock (tel: 087 2408323)",
+        "info_21": "O'Connor Tom, Evelyn: 213 Ardilaun, Portmarnock (tel: 01 8463090)",
+        "info_22": "O'Connor Tom, Evelyn: 213 Ardilaun, Portmarnock (tel: 01 8463090)",
+        "info_23": "O'Connor Tom, Evelyn: 213 Ardilaun, Portmarnock (tel: 01 8463090)",
+        "info_24": "McIntyre Barn, Trena: 54 Torcail, Portmarnock (tel: 01 8459920)",
+        "info_25": "McIntyre Barn, Trena: 54 Torcail, Portmarnock (tel: 01 8459920)",
+        "info_26": "McIntyre Barn, Trena: 54 Torcail, Portmarnock (tel: 01 8459920)",
+        "info_27": "Archer Simon, Deirdre: 28 Carrickhill Walk, Portmarnock (tel:01 8463979)",
+        "info_28": "Archer Simon, Deirdre: 28 Carrickhill Walk, Portmarnock (tel:01 8463979)",
+        "info_29": "Lloyd B Eddie, Bridie: 69 Carrick Court, Portmarnock (tel:086 1302292)",
+        "info_30": "Lloyd B Eddie, Bridie: 69 Carrick Court, Portmarnock (tel:086 1302292)",
+        "info_31": "Lloyd Joe, Elaine: 74 Portmarnock Drive, Portmarnock (tel: 087 6868776)",
+        "info_32": "Lloyd Joe, Elaine: 74 Portmarnock Drive, Portmarnock (tel: 087 6868776)",
+        "info_33": "Williams Peter, Norma: 8 Waterside Crescent, Portmarnock (tel: 01 8461063)",
         # Afegir aquí la resta d'informacions
     }
 
