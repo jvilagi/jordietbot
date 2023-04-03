@@ -87,7 +87,7 @@ def button(update: Update, context: CallbackContext) -> None:
         "info_9": "Doyle(Cronin) Dermot, Bernadette: 165 Briar Walk, Portmarnock (tel:01 8284787)",
         "info_10": "Gleeson Eoghan, Maureen: 32 Portmarnock Drive, Portmarnock (tel: 01 4432458)",
         "info_11": "Gleeson Eoghan, Maureen: 32 Portmarnock Drive, Portmarnock (tel: 01 4432458)",
-        "info_12": "Mc Dermott John, Sarah: 13 Limetree Ave., Portmarnock (tel: 086 8643956)"
+        "info_12": "Mc Dermott John, Sarah: 13 Limetree Ave., Portmarnock (tel: 086 8643956)",
         "info_13": "Mc Dermott John, Sarah: 13 Limetree Ave., Portmarnock (tel: 086 8643956)",
         "info_14": "Mooney, Linda: 70 The Dunes, Portmarnock (tel: 086 3868543)",
         "info_15": "Mooney, Linda: 70 The Dunes, Portmarnock (tel: 086 3868543)",
