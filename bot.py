@@ -68,7 +68,7 @@ def start(update: Update, context: CallbackContext) -> None:
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    update.message.reply_text("Tria un botó per obtenir més informació:", reply_markup=reply_markup)
+    update.message.reply_text("In each row of buttons are the members of the house.\nClick and the address and phone number will appear", reply_markup=reply_markup)
 
 def button(update: Update, context: CallbackContext) -> None:
     query = update.callback_query
@@ -108,7 +108,7 @@ def button(update: Update, context: CallbackContext) -> None:
         "info_30": "GABRIEL ROMERO\nLloyd B Eddie, Bridie: \n69 Carrick Court, Portmarnock \n(tel: 086 1302292)",
         "info_31": "ZIHAO YANG\nLloyd Joe, Elaine: \n74 Portmarnock Drive, Portmarnock \n(tel: 087 6868776)",
         "info_32": "GERARDO ANDRÉS HERNÁNDEZ\nLloyd Joe, Elaine: \n74 Portmarnock Drive, Portmarnock \n(tel: 087 6868776)",
-        "info_33": "SERGI & JORDI \nilliams Peter, Norma: \n8 Waterside Crescent, Portmarnock \n(tel: 01 8461063)",
+        "info_33": "SERGI & JORDI \nWilliams Peter, Norma: \n8 Waterside Crescent, Portmarnock \n(tel: 01 8461063)",
         # Afegir aquí la resta d'informacions
     }
 
