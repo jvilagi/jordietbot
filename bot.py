@@ -7,6 +7,9 @@ TOKEN = "6011630982:AAFhEP6GSgdK8sLHQbo7LIZ7HW2nBwPYURw"
 def start(update: Update, context: CallbackContext) -> None:
     keyboard = [
         [
+            InlineKeyboardButton("MAPA", callback_data="mapa")
+        ],
+        [
             InlineKeyboardButton("Pau", callback_data="info_1"),
             InlineKeyboardButton("Luyi", callback_data="info_2"),
             InlineKeyboardButton("José A.", callback_data="info_3")
@@ -76,6 +79,7 @@ def button(update: Update, context: CallbackContext) -> None:
     query.answer()
 
     info = {
+        "mapa": "https://bit.ly/irelandslc",
         "info_1": "PAU IGLESIAS\nBrady Stuart, Lorraine: \n24 The Dunes, Portmarnock \n(tel: 01 8462622)",
         "info_2": "LUYI LIN\nBrady Stuart, Lorraine: \n24 The Dunes, Portmarnock \n(tel: 01 8462622)",
         "info_3": "JOSÉ ANTONIO OROZCO\nBrady Stuart, Lorraine: \n24 The Dunes, Portmarnock \n(tel: 01 8462622)",
