@@ -6,16 +6,16 @@ TOKEN = "6011630982:AAFhEP6GSgdK8sLHQbo7LIZ7HW2nBwPYURw"
 
 def start(update: Update, context: CallbackContext) -> None:
     keyboard = [
-        [
-            InlineKeyboardButton("HOUSES LOCATION MAP", callback_data="map")
-        ],
+        #[
+        #	InlineKeyboardButton("HOUSES LOCATION MAP", callback_data="map")
+        #],
         [
             InlineKeyboardButton("Pau", callback_data="info_1"),
             InlineKeyboardButton("Luyi", callback_data="info_2"),
-            InlineKeyboardButton("José A.", callback_data="info_3")
+            InlineKeyboardButton("José A.", callback_data="info_3"),
+            InlineKeyboardButton("Jordi", callback_data="info_4")
         ],
         [
-            InlineKeyboardButton("Jordi", callback_data="info_4"),
             InlineKeyboardButton("Víctor", callback_data="info_5"),
             InlineKeyboardButton("Martí", callback_data="info_6")
         ],
@@ -79,16 +79,16 @@ def button(update: Update, context: CallbackContext) -> None:
     query.answer()
 
     info = {
-        "map": "CLICK TO DISPLAY THE MAP: \nhttps://bit.ly/irelandslc",
+        #"map": "CLICK TO DISPLAY THE MAP: \nhttps://bit.ly/irelandslc",
         "info_1": "PAU IGLESIAS\nBrady Stuart, Lorraine: \n24 The Dunes, Portmarnock \n(tel: 01 8462622)",
         "info_2": "LUYI LIN\nBrady Stuart, Lorraine: \n24 The Dunes, Portmarnock \n(tel: 01 8462622)",
         "info_3": "JOSÉ ANTONIO OROZCO\nBrady Stuart, Lorraine: \n24 The Dunes, Portmarnock \n(tel: 01 8462622)",
-        "info_4": "JORDI LLOVICH\nChalkley John, Fiona: \n24 Beechpark, Portmarnock \n(tel: 01 8463522)",
+        "info_4": "JORDI LLOVICH\nBrady Stuart, Lorraine: \n24 The Dunes, Portmarnock \n(tel: 01 8462622)",
         "info_5": "VÍCTOR ALONSO\nChalkley John, Fiona: \n24 Beechpark, Portmarnock \n(tel: 01 8463522)",
         "info_6": "MARTÍ GONZÁLEZ\nChalkley John, Fiona: \n24 Beechpark, Portmarnock \n(tel: 01 8463522)",
-        "info_7": "MARINA DÍAZ-BENITO\nDoyle(Cronin) Dermot, Bernadette: \n165 Briar Walk, Portmarnock \n(tel: 01 8284787)",
-        "info_8": "ANA TOLOSANO\nDoyle(Cronin) Dermot, Bernadette: \n165 Briar Walk, Portmarnock \n(tel: 01 18284787)",
-        "info_9": "BEATRIZ GONZÁLEZ\nDoyle(Cronin) Dermot, Bernadette: \n165 Briar Walk, Portmarnock \n(tel: 01 8284787)",
+        "info_7": "MARINA DÍAZ-BENITO\nWalsh, Susan, Bernadette: \n17 Parnell Cottages, Malahide \n(tel: 01-8462656)",
+        "info_8": "ANA TOLOSANO\nWalsh, Susan, Bernadette: \n17 Parnell Cottages, Malahide \n(tel: 01-8462656)",
+        "info_9": "BEATRIZ GONZÁLEZ\nWalsh, Susan, Bernadette: \n17 Parnell Cottages, Malahide \n(tel: 01-8462656)",
         "info_10": "YAO YAO CHEN\nGleeson Eoghan, Maureen: \n32 Portmarnock Drive, Portmarnock \n(tel: 01 4432458)",
         "info_11": "ALEXANDRA LASCORZ\nGleeson Eoghan, Maureen: \n32 Portmarnock Drive, Portmarnock \n(tel: 01 4432458)",
         "info_12": "MAR DIJORT\nMc Dermott John, Sarah: \n13 Limetree Ave., Portmarnock \n(tel: 086 8643956)",
